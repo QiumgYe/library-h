@@ -1,0 +1,215 @@
+@CHARSET "UTF-8";
+
+*
+{
+	font-size: 12px;
+	font-family: "times new roman";
+}
+
+
+body{
+	margin: 0 auto;
+	padding:0 auto;
+	text-align: center;
+	
+}
+#container
+{
+	margin: 0 auto;
+	padding: 0 auto;
+	text-align: center;
+	
+}
+#header
+{
+	width: 990px;
+	height: 65px;
+	margin: 0 auto;
+}
+#logo
+{
+	width: 77px;
+	height: 76px;
+	float: left;
+	background:url("images/user-logo.png") no-repeat left bottom;
+}
+#select
+{
+	width: 727px;
+	height: 74px;
+	float: right;
+	text-align: right;
+}
+#select #sel
+{
+	margin-top: 15px;
+}
+#picture
+{
+	width: 990px;
+	height: 345px;
+	clear: both;
+	margin: 0 auto;
+}
+#nav
+{
+	width: 990px;
+	height: 40px;
+	background: #f1f5ff;
+	border: 0px;
+	margin: 0 auto;
+}
+#main
+{
+	width: 990px;
+	background: #f1f5ff;
+	border: 0px;
+	margin: 0 auto;
+}
+#stf
+{
+	width: 650px;
+	border: 1px;
+	font-size: 20px;
+	margin: 0 auto;
+	border-style: solid;
+	border-color: #0000ff
+}
+#stf-book
+{
+	width: 505px;
+	border: 1px;
+	font-size: 20px;
+	margin: 0 auto;
+	border-style: solid;
+	border-color: #0000ff
+}
+#stf-head{
+	border: 0px;
+	font-size: 23px;
+	margin: 0 auto;
+	font-family:"宋体";
+	color:#0000ff;
+	text-decoration:underline
+	
+}
+a:line,a:hover,a:active
+{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#nav a:hover
+{
+	color: #333333;
+	text-decoration: none;
+	background: #F6F6F6;
+}
+#nav a
+{
+	width: 194px;
+	height: 40px;
+}
+td
+{
+	line-height: 40px;
+	font-size: 18px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#main
+{
+	width: 990px;
+	height: 250px;
+	margin: 0 auto;
+}
+
+#left
+{
+	width: 660px;
+	height: 250px;
+	float: left;
+	line-height: 1.5em;
+}
+
+h1
+{
+	color: #2ECC71;
+	font-size: 18px;
+	height: 36px;
+	border-bottom: 2px solid #2ECC71;
+}
+
+#left img
+{
+	float: left;
+	width: 220px;
+	height: 144px;
+}
+
+#left-down
+{
+	margin: 0px auto;
+	padding: 0px;
+	clear: both;
+	width: 100%;
+	height: 70px;
+}
+#left-down img
+{
+	vertical-align: text-bottom;
+	width: 60px;
+	height: 50px;
+	vertical-align: bottom;
+}
+#p1
+{
+	padding: 20px;
+	height: 30px;
+	
+}
+
+#right
+{
+	width: 290px;
+	height: 250px;
+	float: right;
+	border: 1px solid #2ECC71;
+	
+}
+
+ul
+{
+	width: 200px;
+	height: 100%;
+	padding: 0px;
+	margin: 0 auto;
+}
+li
+{
+	padding: 0px;
+	margin: 0px;
+	line-height: 2em;
+	list-style-type: none;
+	text-align: left;
+}
+
+#footer
+{
+	clear: both;
+	width: 990px;
+	height: 30px;
+	background: #F7F7F7;
+	border-top: 2px solid #2ECC71;
+	margin: 0 auto;
+	
+}
+
+#footer p
+{
+	
+	padding: 10px auto;
+	text-align: center;
+    color: #333333;	
+}
+

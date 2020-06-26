@@ -1,0 +1,64 @@
+@CHARSET "UTF-8";
+
+.form_num {
+	width: 300px;
+	margin: 10px auto;
+	margin-top: 20px;
+	overflow: hidden;
+	font-family: "微软雅黑";
+	font-size: 17px;
+}
+
+.form_num_ipt {
+	width: 48px;
+	height: 40px;
+	border: solid 1px #CCCCCC;
+	background: #FFFFFF;
+	display: inline-block;
+	text-align: center;
+}
+
+.form_num_ipt input {
+	width: 20px;
+	height: 30px;
+	margin: 5px;
+	border: none;
+	font-family: "微软雅黑";
+	font-size: 15px;
+	color: #666;
+}
+
+.form_num_btn {
+	width: 42px;
+	height: 42px;
+	border: none;
+	font-family: "微软雅黑";
+	color: #FFFFFF;
+	font-size: 17px;
+	background: #85a3fd;
+	cursor: pointer;
+	padding: 10px;
+}
+
+#register_select{
+	width: 290px;
+	height: 30px;
+	margin: 5px;
+	border: none;
+	font-family: "微软雅黑";
+	font-size: 15px;
+	color: #666;
+}
+#register_select:hover {
+	width: 290px;
+	height: 30px;
+	border: none;
+	font-family: "微软雅黑";
+	font-size: 15px;
+	color: #666;
+}
+
+s:fielderror{
+	font-family: "微软雅黑";
+	margin: auto auto;
+}

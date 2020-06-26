@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+#searchForm{
+	display: inline;
+}
+
+.main-repay-form{
+	float: left;
+}
+
+#bookid{
+	background: white;
+}

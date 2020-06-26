@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!--2020 05 11(h)把扩展名改为action -->
+     <constant name="struts.action.extension" value="action" />
+	<!--2020 05 11(h)动态Action添加的代码 -->
+    <constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	
+	<package name="register" extends="struts-default" namespace="/">
+		
+		
+		<!-- 管理员模块Action  A代表Admin 包括登陆，书本的增删改查，用户的增删改查-->
+		<action name="Admin-*" class="AdminSpring" method="{1}">
+			<result name="success">/admin-main.jsp</result>
+			<result name="error">/admin-login-error.jsp</result>
+			<result name="addbook">/admin-addbook-success.jsp</result>
+			<result name="deletebook">/admin-deletebook-success.jsp</result>
+			<result name="updatebook">/admin-updatebook-success.jsp</result>
+			<result name="updatestu">/admin-updatestu-success.jsp</result>
+			<result name="deletestu">/admin-deletestu-success.jsp</result>
+			<result name="fail">/admin-fail.jsp</result>
+			<!--特殊!用户借书-->
+			<result name="lendbook">/user-lendbook-success.jsp</result>
+			<result name="user-lendbook-fail">/user-lendbook-fail.jsp</result>
+			<result name="user-lendbook-fail2">/user-lendbook-fali2.jsp</result>
+			<!--管理员查询借阅号-->
+			<result name="check">/admin-check-success.jsp</result>
+			<!--管理员查询归还借阅号-->
+			<result name="lend">/admin-lend-success.jsp</result>
+		</action>
+	
+	
+		<!-- 用户模块Action-->
+		<!-- 用户模块Action-->
+		<action name="user_*" class="userSpring" method="{1}">
+			<result name="register">/register.jsp</result>
+			<result name="registerSuccess">/index.jsp</result>
+			<result name="login">/index.jsp</result>
+			<result name="loginSuccess">/main.jsp</result>
+			<result name="personalInfo">/user-Information.jsp</result>
+			<result name="input">/register.jsp</result>
+			<result name="changePwd">/change-Password.jsp</result>
+			<result name="changePwdSuccess">/main.jsp</result>
+			<result name="forgetPasswordRequest">/forget-Password-Request.jsp</result>
+			<result name="forgetPasswordRequestSuccess">/forget-Password-Response.jsp</result>
+			<result name="forgetPasswordResponse">/forget-Password-Response.jsp</result>
+			<result name="forgetPasswordResponseSuccess">/index.jsp</result>
+			
+		</action>
+		
+		
+		<!-- 用户检索模块Action-->
+		<action name="userBook_*" class="userBookSpring" method="{1}">
+			<result name="searchResult">/search-result.jsp</result>
+		</action>
+		
+		
+		
+	</package>
+	
+</struts>    
